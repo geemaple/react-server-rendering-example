@@ -1,0 +1,121 @@
+/* CSS declarations go here */
+.article-item {
+    font-size: 12px;
+    border-top: 1px solid #eaecef;
+    position: relative;
+    padding: 20px 0;
+    *zoom: 1
+}
+.article-item:first-child {
+    border-top: 0
+}
+.article-item h3 {
+    margin-bottom: 5px
+}
+.article-item h3 a {
+    font: 20px/29px "微软雅黑";
+    color: #262627;
+    font-weight: 800
+}
+.article-item h3 a:hover {
+    color: #e05a5a;
+    text-decoration: none
+}
+.article-item .article-item-pic {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 120px;
+    top: 20px
+}
+.article-item .article-item-pic a {
+    display: block;
+    height: 100%;
+    overflow: hidden
+}
+.article-item .article-item-pic img {
+    width: 100%
+}
+
+.article-item .article-item-desc {
+    height: 48px;
+    color: #606a77;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden
+}
+.article-item .article-item-info {
+    line-height: 22px;
+    color: #999;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 13px
+}
+.article-item .article-item-info .article-item-author,
+.article-item .article-item-info .tm,
+.article-item .article-item-info .count,
+.article-item .article-item-info .share-article {
+    margin-right: 10px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+.article-item .article-item-info .share-article {
+    color: #999
+}
+.article-item .article-item-info .share-article:hover {
+    color: #999;
+    text-decoration: none
+}
+.article-item .article-item-info .article-item-author {
+    color: #666
+}
+.article-item .article-item-info .article-item-author:hover {
+    color: #ccc;
+    text-decoration: none
+}
+.article-item .article-item-info .labels {
+    float: right;
+    margin-right: -1px;
+    margin-right: -3px\9
+}
+.article-item-info .label {
+    padding: 0 1px;
+    display: inline-block;
+    height: 20px;
+    _overflow: hidden;
+    line-height: 20px;
+    vertical-align: top
+}
+.article-item-info .label .labelnm {
+    color: #999;
+    margin: 0 2px 0 0;
+    _height: 18px;
+    _line-height: 18px;
+    _display: inline;
+    _zoom: 1
+}
+.article-item-info .labelnm:hover {
+    color: #e05a5a;
+    text-decoration: none
+}
+.article-item .article-item-info .public-v {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: -7px
+}
+
+.hasImg {
+    padding-left: 220px;
+    min-height: 138px;
+    _height: 138px
+}
+.hasImg .article-item-info {
+    width: 610px
+}
+.hasImg .article-item-desc {
+    overflow: hidden
+}
