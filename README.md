@@ -1,9 +1,6 @@
 # react-server-rendering-example
-A simple example of how to do server-side rendering with the
-[React](http://facebook.github.io/react/) library so that component code can be
-shared between server and browser, as well as getting fast initial page loads
-and search-engine-friendly pages.
 
+An example of React server-side rendering with [express-react-views](https://github.com/reactjs/express-react-views) view engine
 
 ####client_rendering/
 ```sh
@@ -17,3 +14,6 @@ $ npm install
 $ webpack
 $ npm start
 ```
+
+Then navigate to [http://localhost:3000](http://localhost:3000) and
+click on the button to see some reactive events in action.
