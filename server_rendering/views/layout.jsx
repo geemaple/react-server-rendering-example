@@ -27,8 +27,6 @@ export default class Layout extends React.Component{
             {propStore}
             <script type='text/javascript' src={script}/>
             <script type='text/javascript' src='/js/jquery.min.js'/>
-            <script type='text/javascript' src='/js/bootstrap.min.js'/>
-            <script type='text/javascript' src='/js/googleStatistic.js'/>
           </body>
         </html>
       );
