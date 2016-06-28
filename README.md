@@ -10,9 +10,8 @@ $ npm start
 
 ####server_rendering/
 ```sh
-$ npm install webpack -g
 $ npm install
-$ webpack
+$ webpack #if webpack command not available run $ npm install webpack -g
 $ npm start
 ```
 
