@@ -17,8 +17,10 @@ export default class HelloMessage extends React.Component{
   }
 
   render() {
+    var styleSheets = [{key:'css001', type: 'text/css', rel: 'stylesheet', href: '/css/style.css'}];
+    var javaScripts = [{key:'js001', type: 'text/javascript', src: '/component/index.js'}]
     return (
-      <Layout script='/component/index.js' {...this.props}>
+      <Layout propLink={styleSheets} propScript={javaScripts} {...this.props}>
         <button onClick={this.handleClick.bind(this)}>
           Click {this.props.name}! Number of clicks: {this.state.count}
         </button>
@@ -27,7 +29,7 @@ export default class HelloMessage extends React.Component{
   }
 };
 
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined') { //client rendering
     var container = document.getElementById('container');
     var props = JSON.parse(document.getElementById('parameters').innerHTML);
     var component = React.createFactory(HelloMessage);
