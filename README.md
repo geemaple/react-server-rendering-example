@@ -18,7 +18,9 @@ click on the button to see some reactive events in action.
 - Express framework
 - express-react-views for server_rendering
 - Only JSX template file to write
-- upgrade to javascript ES6
+- Upgrade to javascript ES6
+- *new version* render react on the `document` instead of some `<child id='container'>`
+- *new version* rename express-react-views `index.js` to `jsxTemplate.js` because `renderToString` is needed for server rendering
 
 - - -
 
@@ -31,7 +33,7 @@ click on the button to see some reactive events in action.
 *server_rendering/*
 ```sh
 $ npm install
-$ webpack #如果提示webpack不存在，执行 $ npm install webpack -g 再试试
+$ ./node_modules/.bin/webpack
 $ npm start
 ```
 在浏览器打开[http://localhost:3000](http://localhost:3000)点击界面按钮，会看到数字在递增.
@@ -42,3 +44,5 @@ $ npm start
 - express-react-views引擎
 - 只需要写.jsx文件即可
 - 升级javascript语法到ES6
+- *新版本* 直接将react挂在到DOM根节点上，即`document`
+- *new version* 重命名 express-react-views `index.js` 为 `jsxTemplate.js` 因为服务器渲染需要 `renderToString`
