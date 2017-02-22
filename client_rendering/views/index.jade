@@ -1,9 +1,0 @@
-extends layout
-
-block content
-  <div id='content'></div>
-  script(src='index.js')
-  script.
-    'use strict';
-    var result = !{param};
-    ReactDOM.render(React.createElement(Index, { name: result }), content);
