@@ -16,11 +16,8 @@ click on the button to see some reactive events in action.
 
 *server_rendering/*
 - Express framework
-- express-react-views for server_rendering
 - Only JSX template file to write
 - Upgrade to javascript ES6
-
-
 - Render react on the `document` instead of some `<child id='container'>`
 - Rename express-react-views `index.js` to `jsxTemplate.js` because `renderToString` is needed for server rendering
 
@@ -43,9 +40,7 @@ $ npm start
 ###tech glimpse
 *server_rendering/*
 - Express框架
-- express-react-views引擎
 - 只需要写.jsx文件即可
 - 升级javascript语法到ES6
-
 - 直接将react挂在到DOM根节点上，即`document`
 - 重命名 express-react-views `index.js` 为 `jsxTemplate.js` 因为服务器渲染需要 `renderToString`
